@@ -1,0 +1,43 @@
+#Natal
+
+Commit 1: New Project
+    o Run "new laravel Natal" to create a brand new Laravel application
+
+Commit 2: Migrations Created
+    o Competitor Model called "Competitor.php" was created
+    o Competitor Controller called "CompetitorController.php" was created
+    o Competitor Factory called "QuestionFactory.php" was created
+    o Competitor Migration called "2017_12_19_123830_create_competitors_table.php" was created
+    o Question Model called "Question.php" was created
+    o Question Controller called "QuestionController.php" was created
+    o Question Factory called "QuestionFactory.php" was created
+    o Question Migration called "2017_12_19_124715_create_questions_table.php" was created
+
+    o Competitors table was created at "2017_12_19_123830_create_competitors_table.php":
+        1. id           -> Primary key
+        2. name         -> Name
+        3. age          -> Age
+        4. timestamps   -> Time
+
+    o Questions table was created at "2017_12_19_124715_create_questions_table.php":
+        1. id           -> Primary key
+        2. question     -> Question
+        3. first        -> First option
+        4. second       -> Second option
+        5. third        -> Third option
+        6. fourth       -> Fourth option
+        7. fifth        -> Fifth option
+        8. correct      -> Correct Answer
+        9. link         -> Link for questions with videos
+        10. timestamps  -> Time
+
+
+Commit 3: Navbar created
+    o View called "layouts/app.blade.php" was created
+        - Main page
+    o View called "layouts/nav.blade.php" was created
+        - Navbar code
+    o View called "topics.blade.php" was created
+        - This page will display all the questions' topics
+    o File "routes/web.php" was changed
+        - layouts.app is now the main page
