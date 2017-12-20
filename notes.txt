@@ -85,7 +85,7 @@ Commit 6: Laravel Mix
         - node v8.4.0
         - npm v5.3.0
 
-Commit 7:
+Commit 7: Personalized Buttons/Question View
     o Controller "QuestionController" was modified
         - Pass data through show() method.
         *** It is very important to use firstOrFail or findOrFail when you want to pass just one model ***
@@ -99,3 +99,11 @@ Commit 7:
         - Code for the personalized radio button
     o Sass file "app.scss" was modified
         - Radio buttons style was imported
+
+Commit 8:
+    o View questions.panel was modified.
+        - Links between topics and questions
+    o Controller "QuestionController" was modified
+        - Now it is possible to filter the questions by its topics
+    o File "routes/web.php" was modified
+        - Route GET '/topicos/{topic}' was created

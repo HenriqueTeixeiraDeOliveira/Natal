@@ -14,4 +14,4 @@
 Route::get('/','TopicController@index');
 Route::get('/topicos','TopicController@show');
 
-Route::get('/perguntas','QuestionController@show');
+Route::get('/topicos/{topic}','QuestionController@show');
