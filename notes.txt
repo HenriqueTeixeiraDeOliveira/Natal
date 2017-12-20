@@ -39,12 +39,12 @@ Commit 3: Navbar created
         - Navbar code
     o View called "topics.blade.php" was created
         - This page will display all the questions' topics
-    o File "routes/web.php" was changed
+    o File "routes/web.php" was modified
         - layouts.app is now the main page
 
 Commit 4:
     o Database configurations were set (.git_ignore)
-    o File "AppServiceProvider" was changed
+    o File "AppServiceProvider" was modified
         - Schema::defaultStringLength(191) was include at boot method to avoid database migration issues.
     o Topic Model called "Topic.php" was created
     o Topic Controller called "TopicController.php" was created
@@ -53,25 +53,29 @@ Commit 4:
         1. id           -> Primary key
         2. name         -> Name
         3. description  -> Topic's description
-    o View layouts.nav was changed.
+    o View layouts.nav was modified.
         - Link for "/topics" at "Perguntas"
-    o Migration "2017_12_19_124715_create_questions_table.php" was changed:
+    o Migration "2017_12_19_124715_create_questions_table.php" was modified:
         - Column called "topic_id" was included
         - Column called "done" was included
         - Column "link" can be nullable
         - Column "correct" was renamed to "answer"
     o View called "questions.panel" was created
-        - Panel component to show the topics
-    o View questions.topics was changed.
+        - Panel component to show the
+    o View called "questions.question" was created
+    o Controller "QuestionController" was modified
+        - Methods show() created.
+    o View questions.topics was modified.
         - Refactoring panels
-    o File "routes/web.php" was changed
+    o File "routes/web.php" was modified
         - No more work. All code -> controllers
+
     o Factory called "ModelFactory" was created
         - User factory
         - Competitor factory
         - Question factory
         - Topic factory
-    o File "composer.json" was changed
+    o File "composer.json" was modified
         - Helper functions can be used (autoload.dev)
     o File called "function.php" was created
         - Helper functions code.
