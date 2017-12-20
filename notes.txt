@@ -41,3 +41,37 @@ Commit 3: Navbar created
         - This page will display all the questions' topics
     o File "routes/web.php" was changed
         - layouts.app is now the main page
+
+Commit 4:
+    o Database configurations were set (.git_ignore)
+    o File "AppServiceProvider" was changed
+        - Schema::defaultStringLength(191) was include at boot method to avoid database migration issues.
+    o Topic Model called "Topic.php" was created
+    o Topic Controller called "TopicController.php" was created
+        - Methods index() and show() created.
+    o Question Migration called "2017_12_19_174052_create_topics_table.php" was created
+        1. id           -> Primary key
+        2. name         -> Name
+        3. description  -> Topic's description
+    o View layouts.nav was changed.
+        - Link for "/topics" at "Perguntas"
+    o Migration "2017_12_19_124715_create_questions_table.php" was changed:
+        - Column called "topic_id" was included
+        - Column called "done" was included
+        - Column "link" can be nullable
+        - Column "correct" was renamed to "answer"
+    o View called "questions.panel" was created
+        - Panel component to show the topics
+    o View questions.topics was changed.
+        - Refactoring panels
+    o File "routes/web.php" was changed
+        - No more work. All code -> controllers
+    o Factory called "ModelFactory" was created
+        - User factory
+        - Competitor factory
+        - Question factory
+        - Topic factory
+    o File "composer.json" was changed
+        - Helper functions can be used (autoload.dev)
+    o File called "function.php" was created
+        - Helper functions code.
