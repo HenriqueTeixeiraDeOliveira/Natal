@@ -42,7 +42,7 @@ Commit 3: Navbar created
     o File "routes/web.php" was modified
         - layouts.app is now the main page
 
-Commit 4:
+Commit 4 e 5:
     o Database configurations were set (.git_ignore)
     o File "AppServiceProvider" was modified
         - Schema::defaultStringLength(191) was include at boot method to avoid database migration issues.
@@ -79,3 +79,8 @@ Commit 4:
         - Helper functions can be used (autoload.dev)
     o File called "function.php" was created
         - Helper functions code.
+
+Commit 6: Laravel Mix
+    o Run "npm install"
+        - node v8.4.0
+        - npm v5.3.0
