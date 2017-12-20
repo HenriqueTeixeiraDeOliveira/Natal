@@ -84,3 +84,18 @@ Commit 6: Laravel Mix
     o Run "npm install"
         - node v8.4.0
         - npm v5.3.0
+
+Commit 7:
+    o Controller "QuestionController" was modified
+        - Pass data through show() method.
+        *** It is very important to use firstOrFail or findOrFail when you want to pass just one model ***
+    o Controller "TopicController" was modified
+        - get() was changed to all().
+    o View "questions.question" was modified.
+        - Personalized radio buttons were added
+    o CSS file "app.css" was modified
+        - New stylesheet generated through Sass
+    o Sass file called "RadioButton.scss" was created
+        - Code for the personalized radio button
+    o Sass file "app.scss" was modified
+        - Radio buttons style was imported
