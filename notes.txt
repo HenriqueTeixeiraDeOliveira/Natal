@@ -31,7 +31,6 @@ Commit 2: Migrations Created
         9. link         -> Link for questions with videos
         10. timestamps  -> Time
 
-
 Commit 3: Navbar created
     o View called "layouts/app.blade.php" was created
         - Main page
@@ -42,7 +41,9 @@ Commit 3: Navbar created
     o File "routes/web.php" was modified
         - layouts.app is now the main page
 
-Commit 4 e 5:
+Commit 4: Notes.txt create to momment all the steps
+
+Commit 5 e 6:
     o Database configurations were set (.git_ignore)
     o File "AppServiceProvider" was modified
         - Schema::defaultStringLength(191) was include at boot method to avoid database migration issues.
@@ -80,12 +81,12 @@ Commit 4 e 5:
     o File called "function.php" was created
         - Helper functions code.
 
-Commit 6: Laravel Mix
+Commit 7: Laravel Mix
     o Run "npm install"
         - node v8.4.0
         - npm v5.3.0
 
-Commit 7: Personalized Buttons/Question View
+Commit 8: Personalized Buttons/Question View
     o Controller "QuestionController" was modified
         - Pass data through show() method.
         *** It is very important to use firstOrFail or findOrFail when you want to pass just one model ***
@@ -100,10 +101,21 @@ Commit 7: Personalized Buttons/Question View
     o Sass file "app.scss" was modified
         - Radio buttons style was imported
 
-Commit 8:
+Commit 9: Link Between Topics and Questions
     o View questions.panel was modified.
         - Links between topics and questions
     o Controller "QuestionController" was modified
         - Now it is possible to filter the questions by its topics
     o File "routes/web.php" was modified
         - Route GET '/topicos/{topic}' was created
+
+Commit 10:
+    o Controller "QuestionController" was modified
+        - Methods update() was created.
+    o File "routes/web.php" was modified
+        - Route PATCH '/topicos/{topic}' was created
+    o View "questions.question" was modified.
+        - It is possible to identify the correct answer and update the 'done' column.
+    o Sass file called "RadioButton.scss" was renamed to "CheckButtons.scss"
+    o CSS file "app.css" was modified
+        - Unnecessary styles were deleted

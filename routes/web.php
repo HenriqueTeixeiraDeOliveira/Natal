@@ -15,3 +15,4 @@ Route::get('/','TopicController@index');
 Route::get('/topicos','TopicController@show');
 
 Route::get('/topicos/{topic}','QuestionController@show');
+Route::patch('/topicos/{topic}', 'QuestionController@update');

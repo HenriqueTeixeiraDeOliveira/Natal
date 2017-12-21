@@ -8398,19 +8398,6 @@ button.close {
   border-radius: 3px 0 0 3px;
 }
 
-.funkyradio input[type="radio"]:not(:checked) ~ label:before,
-.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
-  content: '\2714';
-  text-indent: .9em;
-}
-
-.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
-.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
-  content: 'X';
-  text-indent: .9em;
-  color: #C2C2C2;
-}
-
 .funkyradio input[type="radio"]:hover:not(:checked) ~ label,
 .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
   color: #888;
@@ -8461,6 +8448,7 @@ button.close {
 
 .funkyradio-danger input[type="radio"]:checked ~ label:before,
 .funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  content: '\2718';
   color: #fff;
   background-color: #d9534f;
 }

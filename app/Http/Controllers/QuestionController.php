@@ -15,4 +15,12 @@ class QuestionController extends Controller
         return view('questions.question', compact('question'));
     }
 
+    public function update(Topic $topic)
+    {
+        $question = Question::where(['topic_id' => $topic->id, 'done' => false])->firstOrFail();
+        //dd($question);
+        $question->done = true;
+        $question->save();
+        return redirect('/topicos');
+    }
 }

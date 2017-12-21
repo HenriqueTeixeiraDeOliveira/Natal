@@ -69,6 +69,7 @@
   background-color: #5cb85c;
 }
 .funkyradio-danger input[type="radio"]:checked ~ label:before, .funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  content:'\2718';
   color: #fff;
   background-color: #d9534f;
 }
