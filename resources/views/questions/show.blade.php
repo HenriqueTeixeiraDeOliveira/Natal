@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <form class="form-horizontal" method="POST" action="/topicos/{{$question->topic_id}}">
+                <form class="form-horizontal" method="POST" action="/perguntas/{{$question->topic_id}}">
                     {{ csrf_field() }}
                     {{method_field('PATCH')}}
 

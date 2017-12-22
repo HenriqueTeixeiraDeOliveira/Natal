@@ -17,8 +17,30 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Participantes</a></li>
-                <li><a href="/topicos">Perguntas</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Perguntas
+                        <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/topicos">Responder</a></li>
+                        <li><a href="/perguntas"> Visualizar</a></li>
+                        <li><a href="/perguntas/criar">Criar</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Competidores
+                        <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/competidores"> Visualizar</a></li>
+                        <li><a href="/competidores/cadastro">Criar</a></li>
+
+                    </ul>
+                </li>
+
                 <li><a href="#">Micos</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->

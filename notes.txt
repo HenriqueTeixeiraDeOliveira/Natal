@@ -62,7 +62,7 @@ Commit 5 e 6:
         - Column "link" can be nullable
         - Column "correct" was renamed to "answer"
     o View called "questions.panel" was created
-        - Panel component to show the
+        - Panel component to show the topics
     o View called "questions.question" was created
     o Controller "QuestionController" was modified
         - Methods show() created.
@@ -109,9 +109,9 @@ Commit 9: Link Between Topics and Questions
     o File "routes/web.php" was modified
         - Route GET '/topicos/{topic}' was created
 
-Commit 10:
+Commit 10 e 11:
     o Controller "QuestionController" was modified
-        - Methods update() was created.
+        - Method update() was created.
     o File "routes/web.php" was modified
         - Route PATCH '/topicos/{topic}' was created
     o View "questions.question" was modified.
@@ -119,3 +119,32 @@ Commit 10:
     o Sass file called "RadioButton.scss" was renamed to "CheckButtons.scss"
     o CSS file "app.css" was modified
         - Unnecessary styles were deleted
+
+Commit 12:
+    o Controller "CompetitorController" was modified
+        - Methods index(), create() and store() were created
+    o Controller "QuestionController" was modified
+        - Methods index(), create() and store() were created
+    o Controller "TopicController" was modified
+        - Methods index() and show() were created
+    o Competitor Model was modified
+        - Allow any database injection (guarded = [])
+    o Question Model was modified
+        - Allow any database injection (guarded = [])
+    o Question Migration was modified
+        - 'topic_id' is integer, 'link' can be null and default value for 'done' is false.
+    o View 'questions.question' was renamed to 'questions.show'
+    o View 'questions.topics' was renamed to 'topics.index'
+    o View 'questions.panel' was renamed to 'layouts.panel'
+    o View called "competitors/create.blade.php" was created
+    o View called "competitors/index.blade.php" was created
+    o View called "questions/create.blade.php" was created
+    o View called "questions/index.blade.php" was created
+    o View called "questions/index.blade.php" was created
+    o View called "questions.panel" was created
+    o View "layouts.nav" was modified.
+    o View "layouts.panel" was modified.
+    o View "questions.show" was modified.
+    o View "topics.index" was modified.
+        - Input field component to insert data
+    o File "routes/web.php" was modified

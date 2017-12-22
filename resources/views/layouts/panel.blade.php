@@ -1,5 +1,5 @@
 <div class="col-md-4">
-    <a href="/topicos/{{$link}}" style="text-decoration: none;">
+    <a href="/perguntas/{{$link}}" style="text-decoration: none;">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">{{ $topic }}</h3>

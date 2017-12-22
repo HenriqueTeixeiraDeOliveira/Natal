@@ -15,6 +15,6 @@ class TopicController extends Controller
     public function show()
     {
         $topics = Topic::all();
-        return view('questions.topics', compact('topics'));
+        return view('topics.index', compact('topics'));
     }
 }

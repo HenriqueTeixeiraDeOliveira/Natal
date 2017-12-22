@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             @foreach($topics as $topic)
-                @component('questions.panel',[
+                @component('layouts.panel',[
                 'link'=> $topic->id,
                 'topic'=> $topic->name,
                 'description'=> $topic->description])

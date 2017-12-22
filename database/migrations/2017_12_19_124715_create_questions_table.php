@@ -15,7 +15,7 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('topic_id');
+            $table->integer('topic_id');
             $table->string('question');
             $table->string('first');
             $table->string('second');
@@ -23,7 +23,7 @@ class CreateQuestionsTable extends Migration
             $table->string('fourth');
             $table->string('fifth');
             $table->unsignedTinyInteger('answer');
-            $table->boolean('done');
+            $table->boolean('done')->default(false);
             $table->string('link')->nullable();
             $table->timestamps();
         });
