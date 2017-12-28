@@ -1,12 +1,11 @@
 <div class="col-md-4">
     <a href="/perguntas/{{$link}}" style="text-decoration: none;">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">{{ $topic }}</h3>
-            </div>
-            <div class="panel-body" style=height:200px;>
-                <p>{{ $description }}</p>
+        <div class="thumbnail text-center">
+            <img src="{{ $image }}" alt="{{ $topic }}" style="width: 100%; height: 200px;">
+            <div class="caption">
+                <p class= "cap">{{ $topic }}</p>
             </div>
         </div>
     </a>
 </div>
+

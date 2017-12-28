@@ -12,9 +12,9 @@
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <label for="topic_id">Choose a Channel</label>
+                                <label for="topic_id">Escolha um tópico</label>
                                 <select name="topic_id" id="topic_id" class="form-control" required>
-                                    <option value="">Choose One...</option>
+                                    <option value="">Escolha um tópico</option>
                                     @foreach($topics as $topic)
                                         <option value="{{ $topic->id }}" {{ old('topic_id') == $topic->id ? 'selected' : ''}}>
                                             {{ $topic->name }}
@@ -34,7 +34,6 @@
                             @component('layouts.textinput',['column'=>'second','title'=>'Opção 2:','type'=>'text','validate'=>'required']) @endcomponent
                             @component('layouts.textinput',['column'=>'third','title'=>'Opção 3:','type'=>'text','validate'=>'required']) @endcomponent
                             @component('layouts.textinput',['column'=>'fourth','title'=>'Opção 4:','type'=>'text','validate'=>'required']) @endcomponent
-                            @component('layouts.textinput',['column'=>'fifth','title'=>'Opção 5:','type'=>'text','validate'=>'required']) @endcomponent
                             @component('layouts.textinput',['column'=>'answer','title'=>'Answer:','type'=>'number','validate'=>'required']) @endcomponent
                             @component('layouts.textinput',['column'=>'link','title'=>'Video Link:','type'=>'text','validate'=>'']) @endcomponent
 

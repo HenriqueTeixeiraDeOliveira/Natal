@@ -8,12 +8,16 @@
                     <div class="panel-heading">Cadastre o Competidor</div>
 
                     <div class="panel-body">
-                        <form method="POST" action="/competidores">
+                        <form method="POST" action="/micos">
                             {{ csrf_field() }}
 
+                            @component('layouts.textinput',['column'=>'title','title'=>'Mico','type'=>'text','validate'=>'required']) @endcomponent
+
                             <div class="form-group">
-                                <label for="name">Nome:</label>
-                                <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" required>
+                                <label for="description">Descrição: </label>
+                                <textarea name="description" id="description" class="form-control" rows="8" style="overflow: hidden" required>
+                                    {{ old('description') }}
+                                </textarea>
                             </div>
 
                             <div class="form-group">
@@ -31,6 +35,8 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                             </div>
+
+
 
                             @if(count($errors))
                                 <ul class="alert alert-danger">

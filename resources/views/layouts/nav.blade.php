@@ -41,7 +41,18 @@
                     </ul>
                 </li>
 
-                <li><a href="#">Micos</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Micos
+                        <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/micos"> Pagar</a></li>
+                        <li><a href="/micos/todos"> Visualizar</a></li>
+                        <li><a href="/micos/criar">Criar</a></li>
+
+                    </ul>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->

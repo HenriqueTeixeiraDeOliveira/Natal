@@ -9,11 +9,17 @@
                     {{ csrf_field() }}
                     {{method_field('PATCH')}}
 
-                    <div class="well">
+                    @if($question->topic_id == 6)
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="/video/Renata-{{$question->link}}.mp4"></iframe>
+                        </div>
+                    @endif
+
+
+                    <div class="well" style="background-color: white;">
                         {{ $question->question }}
                     </div>
 
-                    <div id="test">
                         <div class="funkyradio">
                             <div class="{{ $question->answer == 1 ? 'funkyradio-success' : 'funkyradio-danger' }}">
                                 <input type="checkbox" name="option" id="check1" value="1" />
@@ -31,15 +37,10 @@
                                 <input type="checkbox" name="option" id="check4" value="4"/>
                                 <label for="check4">{{ $question->fourth }}</label>
                             </div>
-                            <div class="{{ $question->answer == 5 ? 'funkyradio-success' : 'funkyradio-danger' }}">
-                                <input type="checkbox" name="option" id="check5" value="5" />
-                                <label for="check5">{{ $question->fifth }}</label>
-                            </div>
                         </div>
                         <button type="submit" class="btn btn-success btn-lg btn-block" style="margin-top: 0.5em">
                             Próxima
                         </button>
-                    </div>
                 </form>
 
             </div>

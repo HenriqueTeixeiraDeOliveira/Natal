@@ -29,7 +29,7 @@ Route::post('/perguntas', 'QuestionController@store');
 
 Route::patch('/perguntas/{topic}', 'QuestionController@update');
 
-Route::delete('/perguntas/{question}', 'CompetitorController@destroy');
+Route::delete('/perguntas/{question}', 'QuestionController@destroy');
 
 //COMPETITOR CONTROLLER
 
@@ -39,5 +39,21 @@ Route::get('/competidores/cadastro', 'CompetitorController@create');
 
 Route::post('/competidores', 'CompetitorController@store');
 
-Route::delete('/competidores/{competitors}', 'CompetitorController@destroy');
+Route::delete('/competidores/{competitor}', 'CompetitorController@destroy');
+
+//BLOOPER CONTROLLER
+
+Route::get('/micos/todos','BlooperController@index');
+
+Route::get('/micos/criar','BlooperController@create');
+
+Route::get('/micos','BlooperController@intro');
+
+Route::get('/micos/{competitor}', 'BlooperController@show');
+
+Route::post('/micos', 'BlooperController@store');
+
+Route::patch('/micos/{competitor}', 'BlooperController@update');
+
+Route::delete('/micos/{blooper}', 'BlooperController@destroy');
 

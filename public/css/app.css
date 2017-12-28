@@ -8350,6 +8350,37 @@ button.close {
   }
 }
 
+.cap {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .funkyradio div {
   clear: both;
   /*margin: 0 50px;*/

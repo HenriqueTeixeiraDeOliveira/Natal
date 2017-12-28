@@ -1,3 +1,24 @@
+.cap
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+.level { display: flex; align-items: center;}
+
+.flex { flex: 1;}
+
 .funkyradio div {
   clear: both;
   /*margin: 0 50px;*/

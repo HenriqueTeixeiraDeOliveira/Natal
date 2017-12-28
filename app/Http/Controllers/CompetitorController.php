@@ -32,4 +32,10 @@ class CompetitorController extends Controller
 
         return redirect('/competidores');
     }
+
+    public function destroy(Competitor $competitor)
+    {
+        $competitor->delete();
+        return redirect('/competidores');
+    }
 }

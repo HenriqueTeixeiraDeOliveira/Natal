@@ -36,7 +36,6 @@ class QuestionController extends Controller
             'second' => 'required',
             'third' => 'required',
             'fourth' => 'required',
-            'fifth' => 'required',
             'answer' => 'required',
         ]);
         Question::create([
@@ -46,7 +45,6 @@ class QuestionController extends Controller
             'second' => request('second'),
             'third' => request('third'),
             'fourth' => request('fourth'),
-            'fifth' => request('fifth'),
             'answer' => request('answer'),
             'link' => request('link')
         ]);
@@ -61,6 +59,12 @@ class QuestionController extends Controller
         $question->done = true;
         $question->save();
         return redirect('/topicos');
+    }
+
+    public function destroy(Question $question)
+    {
+        $question->delete();
+        return redirect('/perguntas');
     }
 
 }

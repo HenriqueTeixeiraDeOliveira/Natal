@@ -27,7 +27,7 @@ $factory->define(App\User::class, function (Faker $faker) {
 $factory->define(App\Competitor::class, function (Faker $faker){
     return [
         'name' => $faker->name,
-        'age' => mt_rand(15,90)
+        'age' => mt_rand(1,5)
     ];
 });
 
@@ -40,8 +40,7 @@ $factory->define(App\Question::class, function (Faker $faker){
        'second' => $faker->sentence(3),
        'third' => $faker->sentence(5),
        'fourth' => $faker->sentence(6),
-       'fifth' => $faker->sentence(4),
-       'answer' => mt_rand(1,5),
+       'answer' => mt_rand(1,4),
        'done' => false,
        'link' => $faker->sentence()
    ];
@@ -51,5 +50,13 @@ $factory->define(App\Topic::class, function (Faker $faker){
     return [
         'name' => "topic",
         'description' => $faker->sentence(7)
+    ];
+});
+
+$factory->define(App\Blooper::class, function (Faker $faker){
+    return [
+        'title' => $faker->name,
+        'description' => $faker->name,
+        'age' => mt_rand(1,5)
     ];
 });
